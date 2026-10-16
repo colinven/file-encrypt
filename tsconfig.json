@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "verbatimModuleSyntax": true,
+        "erasableSyntaxOnly": false,
+        "rootDir": "./src",
+        "types": ["node"]
+    },
+    "include": ["src/**/*"]
+}

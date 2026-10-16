@@ -1,0 +1,24 @@
+{
+  "name": "file-encrypt",
+  "version": "1.0.0",
+  "description": "Encrypt and decrypt files with passphrases",
+  "main": "./src/main.ts",
+  "scripts": {
+    "test": "node --test src/test.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/readline-sync": "^1.4.8",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [],
+  "author": "Colin Venancio",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^6.0.1",
+    "commander": "^15.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
