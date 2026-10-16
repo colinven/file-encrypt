@@ -1,7 +1,7 @@
 import path from "node:path"
 import fs from "node:fs"
 import { stat } from "node:fs/promises";
-import { askOverwritePermission, printWarning } from "./cli.ts";
+import { printWarning } from "./cli.ts";
 /**
  * Derive an AES-GCM key from a given `passphrase`, `salt`, and `iterationCount`.
  * @param passphrase a human readable string used to derive the key
