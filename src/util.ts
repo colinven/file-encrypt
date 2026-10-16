@@ -64,16 +64,8 @@ export async function readInputFileBytes(filePath: string): Promise<Uint8Array<A
  * Write `data` to file at `filePath`
  */
 export function writeOutputFile(data: Uint8Array<ArrayBuffer>, filePath: string): void {
-    const absolutePath = path.resolve(filePath);
-    if (fs.existsSync(absolutePath)) {
-        const overwrite = askOverwritePermission(filePath);
-        if (!overwrite) {
-            console.log("Exiting.");
-            process.exit();
-        }
-    }
     try {
-        fs.writeFileSync(absolutePath, data, 'utf8');
+        fs.writeFileSync(filePath, data, 'utf8');
     } catch (e) {
         printWarning(`Error: could not write to file: ${e}`);
         process.exit(1);
